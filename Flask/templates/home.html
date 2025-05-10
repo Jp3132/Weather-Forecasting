@@ -1,0 +1,8 @@
+{% extends 'index.html '%}
+
+{% block content %}
+{% for img in images %}
+<img src = "{{ url_for('static',filename = 'visuals/'+ img)}}" width="700" 
+height="300"></img>
+{% endfor %}
+{% endblock content %}
